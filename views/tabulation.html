@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="../dist/css/bootstrap.css" rel="stylesheet">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"> <img src="http://www.legal500.com/assets/images/roundtable/marsh-logo.png" width="150px"></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://i.pinimg.com/originals/7c/c7/a6/7cc7a630624d20f7797cb4c8e93c09c1.png" width="50px">&nbsp&nbsp<b>Login</b> <span class="caret"></span></a>
+                <ul id="login-dp" class="dropdown-menu">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Login via
+                                <div class="social-buttons">
+                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                </div>
+                                or
+                                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required="">
+                                        <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> keep me logged-in
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bottom text-center">
+                                New here ? <a href="#"><b>Join Us</b></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Nav tabs -->
+                <div class="card">
+                <ul class="nav nav-tabs text-center" role="tablist">
+                    <li role="presentation" class="active"><a href="#Intro" aria-controls="Intro" role="tab" data-toggle="tab">Intro</a></li>
+                    <li role="presentation"><a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab">Page marketing</a></li>
+                    <li role="presentation"><a href="#gestionChamps" aria-controls="gestionChamps" role="tab" data-toggle="tab">gestion des champs</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Calcul des champs</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Validation</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Options</a></li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!------------- Tab INTRO ----------->
+                    <div role="tabpanel" class="tab-pane active" id="Intro">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="focusedInput">Nom programme</label>
+                                        <input class="form-control" id="focusedInput" type="text" value="Nom programme...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="focusedInput">Date de validité</label>
+                                        <input class="form-control" id="focusedInput" type="text" value="Date de validité...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="focusedInput">CODE</label>
+                                        <input class="form-control" id="focusedInput" type="text" value="CODE...">
+                                    </div>
+
+
+                                <div class="form-group col-sm-6">
+                                    <label class="control-label" for="focusedInput">Nb inscrits cible</label>
+                                    <input class="form-control" id="focusedInput" type="text" value="Nb inscrits cible...">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label class="control-label" for="focusedInput">Nb adhésions cible</label>
+                                    <input class="form-control" id="focusedInput" type="text" value="Nb adhésions cible...">
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label class="control-label" for="focusedInput">Description</label>
+                                    <textarea class="form-control" rows="3" id="textArea"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="control-label" for="focusedInput">Importer vos documents</label>
+                                <div class="drag-box">
+                                        <img src="../img/drag.png" width="100px">
+                                    <p>Cliquer ou glissez déposez un fichier</p>
+                                    <div class="js-uploader__box l-center-box l-main">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-circle btn-raised ripple-effect btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+                    </div>
+                    <!------------- Tab Marketing ----------->
+                    <div role="tabpanel" class="tab-pane" id="marketing">
+                        <div class="row">
+                            <div class="col-xs-12 head">
+                                <span>Header</span>
+                            </div>
+                            <div class="col-sm-6 p0">
+                                <div class="choose-file">
+                                    <input type="file">
+                                    <label><img src="../img/drag.png" width="30">Importer un logo</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <input class="form-control" id="focusedInput" type="text" value="Phrase d'accroche">
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-right">
+                                <div class="form-group">
+                                <input class="form-control color-input" type="color"  />
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row mb5">
+                            <!---------------- DOCUMENTS ---------------->
+                            <div class="col-sm-6 p0" >
+                                <div class="head">
+                                    <span>Documents associés</span>
+                                </div>
+                                <div>
+                                    <div class="col-xs-12 text-center">
+                                        <a href="" data-toggle="modal" data-target="#modalDocument">
+                                            <div class="upload">
+                                                <img src="../img/add.png" >
+                                                <span>rattacher un document</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="box-doc">
+                                            <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <p>Document Numéro 1</p>
+                                            <img src="../img/pdf.png">
+                                            <p>Doc-946759_647.pdf</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------- Text Editor ---------------->
+                            <div class="col-sm-6 p0">
+                                <div class="head">
+                                    <span>Description programme</span>
+                                </div>
+                                <div class="wrap">
+                                    <div class="toolbar">
+                                        <div class="row ">
+                                            <select class="form-control" name="fonts" id="fonts">
+                                                <option value="Arial" selected>Arial</option>
+                                                <option value="Georgia">Georgia</option>
+                                                <option value="Tahoma">Tahoma</option>
+                                                <option value="Times New Roman">Times New Roman</option>
+                                                <option value="Verdana">Verdana</option>
+                                                <option value="Impact">Impact</option>
+                                                <option value="Courier New">Courier New</option>
+                                            </select>
+                                            <select class="form-control" name="size" id="size">
+                                                <option value="8">8</option>
+                                                <option value="10">10</option>
+                                                <option value="12">12</option>
+                                                <option value="14">14</option>
+                                                <option value="16" selected>16</option>
+                                                <option value="18">18</option>
+                                                <option value="20">20</option>
+                                                <option value="22">22</option>
+                                                <option value="24">24</option>
+                                                <option value="26">26</option>
+                                            </select>
+                                            <input class="form-control color-input" type="color" />
+                                        </div>
+                                        <button id="bold" title="Bold (Ctrl+B)"><i class="fa fa-bold"></i></button>
+                                        <button id="italic" title="Italic (Ctrl+I)"><i class="fa fa-italic"></i></button>
+                                        <button id="underline" title="Underline (Ctrl+U)"><i class="fa fa-underline"></i></button>
+                                        <button id="align-left" title="Left"><i class="fa fa-align-left"></i></button>
+                                        <button id="align-center" title="Center"><i class="fa fa-align-center"></i></button>
+                                        <button id="align-right" title="Right"><i class="fa fa-align-right"></i></button>
+                                        <button id="list-ul" title="Unordered List"><i class="fa fa-list-ul"></i></button>
+                                        <button id="list-ol" title="Ordered List"><i class="fa fa-list-ol"></i></button>
+                                    </div>
+                                    <div class="editor" contenteditable></div>
+                                </div>
+                                <div  style="border:1px solid gainsboro;display: grid;">
+                                    <div class="head">
+                                        <span>Bouton accès du programme</span>
+                                    </div>
+                                    <div class="row m0">
+                                        <div class="col-xs-10 form-group">
+                                            <input class="form-control "  value="Intitulé du boutton"/>
+                                        </div>
+                                        <div class="col-xs-2 form-group">
+                                            <input class="form-control color-input " type="color" />
+                                        </div>
+                                    </div>
+                                    <div class="choose-file">
+                                        <input type="file">
+                                        <label><img src="../img/drag.png" width="30">Importer une image d'arrière plan</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 head">
+                            <span>Footer</span>
+                        </div>
+                        <div class="col-sm-12 text-right">
+                            <div class="form-group">
+                                <input class="form-control color-input" type="color"  />
+                            </div>
+                        </div>
+                        <div class="col-md-15">
+                            <div class="box-doc">
+                                <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                <h4>PREMIERE COLONNE</h4>
+                                <p class="txt-footer">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
+                            </div>
+                        </div>
+                        <div class="col-md-15">
+                            <div class="box-doc">
+                                <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                <h4>PREMIERE COLONNE</h4>
+                                <p class="txt-footer">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
+                            </div>
+                        </div>
+                        <div class="col-md-15">
+                            <div class="box-doc">
+                                <button type="button" class="btn btn-danger btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-trash"></i></button>
+                                <h4>PREMIERE COLONNE</h4>
+                                <p class="txt-footer">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
+                            </div>
+                        </div>
+                        <div class="col-md-15">
+                            <div class="box-doc">
+                                <a href="" data-toggle="modal" data-target="#document">
+                                <img src="../img/add.png" width="30px">
+                                <span style="display: block">Ajouter une colonne</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-15">
+                            <div class="box-doc">
+                                <div id="myP" class="text-left">
+                                    <button onclick="myFunction()" type="button" class="btn btn-success btn-circle-xs" style="display: none"><i class="glyphicon glyphicon-pencil"></i></button>
+                                    <p>
+                                        <h4>Contact</h4>
+                                  <ul>
+                                      <li> <i class="glyphicon glyphicon-pencil"></i>Tour Ariane 92088 La Défense</li>
+                                      <li><i class="glyphicon glyphicon-phone"></i>+33(1) 42 74 83 02</li>
+                                      <li><i class="glyphicon glyphicon-envelope"></i>marsh@marsh.com</li>
+                                  </ul>
+                                    </p>
+                                </div>
+                                <p id="demo"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-offset-3 col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label" for="focusedInput">Lien Conditions générales de ventes</label>
+                                <input class="form-control" id="" type="text" value="CTA">
+                            </div>
+                        </div>
+                    </div>
+                        <button type="button" class="btn btn-lg btn-circle btn-raised ripple-effect btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="gestionChamps">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+
+                </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-------------MOADL DOCUMENT ------------>
+<div class="modal fade" id="modalDocument" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label" for="focusedInput">Libéllé du call to action</label>
+                            <input class="form-control" id="" type="text" value="CTA">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <strong>
+                                    Selectionner un document
+                                </strong>
+                            </label>
+                            <select class="form-control" id="select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------MOADL DOCUMENT ------------>
+<div class="modal fade" id="document" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label" for="focusedInput">Titre de la colonne</label>
+                            <input class="form-control" id="" type="text" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <strong>
+                                    Description
+                                </strong>
+                            </label>
+                            <textarea class="form-control">
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="focusedInput">Url partenaire</label>
+                            <input class="form-control" id="" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+
+</script><script src='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
